@@ -1,4 +1,7 @@
 const router = require('express').Router();
+const bcrypt = require('bcryptjs')
+
+const { BCRYPT_ROUNDS } = require('../../secrets/index')
 
 router.post('/register', (req, res) => {
   res.end('implement register, please!');
